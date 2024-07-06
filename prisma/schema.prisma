@@ -27,6 +27,6 @@ model refer {
   id          Int      @id @default(autoincrement())
   email       String
   phone_number String
-  course_id   Int
+  course_id   String
   created_at   DateTime @default(now())
 }

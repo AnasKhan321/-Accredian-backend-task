@@ -50,6 +50,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/postdata'  , async(req,res)=>{
+    console.log("calling")
 
     try{
         const data = req.body 
@@ -71,6 +72,7 @@ app.post('/postdata'  , async(req,res)=>{
         res.json({success : true  , data  : newuser })
 
     }catch(e){
+        console.log(e)
         res.json({success : false   , error : e })
     }
 
